@@ -1,0 +1,863 @@
+/* Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Global styles */
+* {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+      box-sizing: border-box;
+      font-family: 'Work Sans', sans-serif;
+      color: white;
+      text-transform: capitalize;
+      text-decoration: none;
+}
+*,
+::before,
+::after {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+}
+body {
+      height: 100%;
+      min-height: 100%;
+      scroll-behavior: smooth;
+      background-color: #2b2b2b !important;
+}
+::selection {
+      background-color: #a259ff;
+      color: white;
+}
+
+/* generic classes */
+.container-fluid {
+      max-width: 100%;
+}
+.container {
+      padding: 0 115px;
+}
+.bg-primary {
+      background-color: #a259ff;
+}
+.bg-secondary {
+      background-color: #2b2b2b;
+}
+.bg-grey {
+      background-color: #3b3b3b;
+}
+.text-primary {
+      color: #a259ff;
+}
+.text-secondary {
+      color: #2b2b2b;
+}
+.text-grey {
+      color: #3b3b3b;
+}
+.text-muted {
+      color: #858584;
+}
+.text-success {
+      color: #00ac4f;
+}
+.space-mono {
+      font-family: 'Space Mono';
+}
+.display-1 {
+      font-weight: 600;
+      font-size: 67px;
+      line-height: 110%;
+}
+.fs-1 {
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 140%;
+}
+.text-content {
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 160%;
+}
+.foot-container {
+      padding: 40px 115.29px;
+      background-color: #3b3b3b;
+}
+.py-1 {
+      padding: 80px 0 80px 0;
+}
+.py-2 {
+      padding: 80px 0 80px 0;
+}
+.title h1 {
+      font-size: 38px;
+      font-weight: 600;
+      line-height: 45.6px;
+}
+.img-fluid {
+      max-width: 100%;
+      height: auto;
+}
+.btn-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+}
+.btn-title button {
+      border: 2px solid #a259ff;
+}
+.text-center {
+      text-align: center;
+}
+.d-none {
+      display: none;
+}
+.btn {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 19px 50px;
+
+      justify-content: center;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 140%;
+}
+.rounded {
+      border-radius: 20px;
+}
+.mb {
+      margin-bottom: 2px;
+}
+.mb-10 {
+      margin-bottom: 10px;
+}
+.mb-20 {
+      margin-bottom: 20px;
+}
+.mb-30 {
+      margin-bottom: 30px;
+}
+.mb-40 {
+      margin-bottom: 40px;
+}
+
+/* ============================================================ Navbar: Start ============================================================ */
+.navbar {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 0 50px;
+      min-height: 100px;
+}
+.nav-logo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100px;
+}
+.nav-logo div {
+      display: flex;
+      align-items: center;
+}
+.navbar a {
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      color: white;
+
+      padding: 0 25px;
+}
+.navbar .nav-logo {
+      margin-right: auto;
+}
+.navbar .hamburger {
+      display: none;
+}
+.navbar button {
+      padding: 19px 30px;
+}
+/* ============================================================ Navbar: End ============================================================ */
+
+/* ============================================================ Digital Art... : Start ============================================================ */
+.discover-digital {
+      display: flex;
+      align-items: flex-start;
+}
+.discover-digital .cont {
+      padding-right: 15px;
+      max-width: 50%;
+}
+.stats-sm {
+      display: none;
+}
+.discover-digital .stats {
+      margin-top: 30px;
+      display: flex;
+      gap: 4vw;
+}
+.discover-digital .stats h1 {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 39.2px;
+}
+.heading {
+      font-size: 67px;
+      font-weight: 600;
+      line-height: 110%;
+}
+.heading-button {
+      padding: 19px 50px;
+      margin-top: 30px;
+}
+.space-walk {
+      overflow: hidden;
+      margin-left: auto;
+}
+.space-walk .info {
+      padding: 22px 20px;
+}
+.space-walk img {
+      max-width: 100%;
+      height: auto;
+}
+.space-walk .info div {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+}
+.space-walk .info div span {
+      font-size: 16px;
+}
+/* ============================================================ Digital Art... : End ============================================================ */
+
+/* ============================================================ Trending Collection : Start ============================================================ */
+.trending-collection .collections {
+      display: flex;
+      /* flex-wrap: wrap; */
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+}
+.trending-collection .preview {
+      margin-top: 60px;
+      max-width: fit-content;
+}
+.trending-collection .preview .other {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+.image {
+      overflow: hidden;
+}
+.image.main {
+      max-width: 330px;
+      max-height: 330px;
+      margin-bottom: 15px;
+}
+.image.more {
+      max-width: 100px;
+      max-height: 100px;
+}
+.image.rest {
+      height: 0;
+      box-sizing: content-box;
+      padding: 15.5% 5%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+.trending-collection .preview .collector {
+      margin-top: 15px;
+}
+.trending-collection .preview .collector .user span {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22.4px;
+}
+/* ============================================================ Trending Collection : End ============================================================ */
+
+/* ============================================================ Top Creators : Start ============================================================ */
+.creators {
+      margin-top: 60px;
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+}
+.creator {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+}
+.creator .count {
+      position: absolute;
+      top: 18px;
+      left: 20px;
+      width: 25px;
+      padding: 3px;
+}
+.creator .profile {
+      border-radius: 100%;
+      overflow: hidden;
+}
+.creator .profile img {
+      width: 120px;
+}
+.creator p {
+      margin-bottom: 5px;
+}
+.creator div span.text-muted {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+}
+.creator div .ETH {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+}
+/* ============================================================ Top Creators : End ============================================================ */
+
+/* ============================================================ Browse Categories : Start ============================================================ */
+.categories {
+      margin-top: 60px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: space-between;
+}
+.category {
+      display: grid;
+      overflow: hidden;
+}
+.category img {
+      max-width: 240px;
+      object-fit: cover;
+}
+.category div span {
+      display: inline-block;
+      padding: 20px 0px 25px 30px;
+}
+/* ============================================================ Browse Categories : End ============================================================ */
+
+/* ============================================================ More NFTs : Start ============================================================ */
+.NFTs {
+      margin-top: 60px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+}
+.NFT {
+      max-width: 330px;
+      overflow: hidden;
+}
+.NFT .details {
+      padding: 20px 30px 25px 30px;
+}
+.NFT .details .name {
+      padding-bottom: 5px;
+}
+.NFT .details .user {
+      padding: 0;
+      justify-content: flex-start;
+      padding-bottom: 25px;
+}
+.NFT .details .user .profile {
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+}
+.NFT .details .user span {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+}
+.NFT .details .user img {
+      max-width: 20px;
+      object-fit: cover;
+}
+.NFT .details .labels {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 8px;
+}
+.NFT .details .labels span {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 110%;
+}
+.NFT .details .worth {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+.NFT .details .worth span {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+}
+/* ============================================================ More NFTs : End ============================================================ */
+
+/* ============================================================ Auction: Start ============================================================ */
+.auction {
+      background-image: linear-gradient(to top, #a259ff, #00000000),
+            url(../assets/images/auction.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      padding: 360px 115px 60px;
+}
+.auction .details {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+}
+.auction .details .about .user {
+      padding: 11px 20px;
+}
+.auction .details .about .user {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+}
+.auction .details .about h1 {
+      font-weight: 600;
+      font-size: 51px;
+      line-height: 110%;
+}
+.auction .see-lg,
+.auction .see-sm {
+      padding: 19px 50px;
+}
+.auction .see-sm {
+      display: none;
+}
+.countdown {
+      background-color: rgba(59, 59, 59, 0.5);
+      padding: 30px;
+}
+.countdown .label {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 110%;
+}
+.countdown .count {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+}
+.countdown .count h1 {
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 120%;
+}
+.countdown .count span {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 110%;
+}
+/* ============================================================ Auction: End ============================================================ */
+
+/* ============================================================ How it works: Start ============================================================ */
+.cards {
+      margin-top: 48px;
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+}
+.card {
+      padding: 30px;
+      max-width: 330px;
+      text-align: center;
+}
+.card p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+}
+/* ============================================================ How it works: End ============================================================ */
+
+/* ============================================================ Weekly Digest: Start ============================================================ */
+.pt4 {
+      margin-top: 40px;
+}
+.weekly-digest {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      padding: 60px;
+}
+.weekly-digest .photo {
+      overflow: hidden;
+}
+.weekly-digest .content {
+      min-width: 300px;
+}
+.weekly-digest .content h1 {
+      font-weight: 600;
+      font-size: 38px;
+      line-height: 120%;
+}
+.btn-input form {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+}
+.btn-input input {
+      padding: 19px 35px 19px 20px;
+      outline: none;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+}
+.btn-input input::placeholder {
+      color: #2b2b2b;
+}
+.btn-input button {
+      margin-left: -30px;
+      padding: 19px 50px;
+}
+/* ============================================================ Weekly Digest: End ============================================================ */
+
+/* ============================================================ Footer: Start ============================================================ */
+.foot-main {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 30px;
+}
+.foot-main .foot-sec-1 .logo {
+      padding: 0;
+      justify-content: flex-start;
+}
+.foot-main .foot-sec-1 .logo,
+.foot-main .foot-sec-2 .logo,
+.foot-main .foot-sec-3 .logo {
+      margin-bottom: 25px;
+}
+.foot-main .links {
+      list-style: none;
+}
+.foot-main .links li {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+}
+.foot-main .social p {
+      margin-bottom: 15px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+}
+.foot-main .descr {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+}
+.foot-container hr {
+      background-color: #858585;
+      width: 100%;
+      height: 1px;
+      margin: 35px 0 20px 0;
+}
+.foot-container .copyright {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 110%;
+}
+/* ============================================================ Footer: End ============================================================ */
+
+/* ============================================================ Create Account: Start ============================================================ */
+.sign-up {
+      display: flex;
+}
+.sign-up .cover {
+      max-width: 50%;
+      display: inherit;
+}
+.sign-up .form-sec {
+      padding: 60px;
+      margin: auto 0;
+}
+.form-sec h1 {
+      font-weight: 600;
+      font-size: 51px;
+      line-height: 110%;
+}
+.sign-up .input-fields {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+}
+.sign-up .input-field {
+      display: flex;
+      width: fit-content;
+      overflow: hidden;
+      width: 70%;
+}
+.sign-up .input-field img {
+      padding: 13px 12px 13px 20px;
+      background-color: white;
+}
+.sign-up .input-field input {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      background-color: white;
+      outline: none;
+      border: none;
+      color: #2b2b2b;
+      width: 100%;
+}
+.sign-up .input-field input::placeholder {
+      color: #2b2b2b;
+}
+.sign-up .input-field:last-child {
+      margin-top: 15px;
+}
+.sign-up .input-field button {
+      width: 100%;
+      padding: 12px 0;
+}
+/* ============================================================ Create Account: End ============================================================ */
+
+/* ============================================================ Connect Wallet: Start ============================================================ */
+.connect-button {
+      padding: 20.5px 40px;
+      max-width: 70%;
+      justify-content: flex-start;
+      margin-bottom: 5px;
+      border: 1px solid #a259ff;
+}
+/* ============================================================ Connect Wallet: End ============================================================ */
+
+/* ============================================================ Artist Page - Cover Picture: Start ============================================================ */
+.cover-picture {
+      position: relative;
+      height: 320px;
+      background-image: linear-gradient(180deg, rgba(151, 71, 255, 0) 21.88%, #9747ff 95.31%),
+            url(../assets/images/animakid-cover.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+}
+.cover-picture .profile-picture {
+      position: absolute;
+      bottom: 0;
+      transform: translateY(50%);
+      left: 112px;
+      max-width: 120px;
+      max-height: 120px;
+      border: 2px solid #2b2b2b;
+      overflow: hidden;
+}
+/* ============================================================ Artist Page - Cover Picture: End ============================================================ */
+
+/* ============================================================ Artist Page - Details: Start ============================================================ */
+.artist-detail .highlight {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+}
+.artist-detail .highlight h1 {
+      font-weight: 600;
+      font-size: 51px;
+      line-height: 110%;
+}
+.artist-detail .highlight .buttons {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+}
+.artist-detail .highlight button {
+      padding: 19px 20.5px;
+      border: 2px solid #a259ff;
+}
+.artist-detail .highlight button:last-child {
+      padding: 19px 30px;
+}
+.artist-detail .stats {
+      display: flex;
+      gap: 20px;
+}
+.artist-detail .stats .stat {
+      width: 156.67px;
+}
+.artist-detail .stats .stat h1 {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 140%;
+}
+/* ============================================================ Artist Page - Cover Picture: End ============================================================ */
+
+/* ============================================================ Artist Page - Nav-tabs: Start ============================================================ */
+.nav-line {
+      width: 100%;
+      height: 1px;
+      background-color: #858584;
+}
+.nav-tabs {
+      display: flex;
+      align-items: center;
+}
+.nav-tabs .menu-item {
+      flex-basis: 0;
+      flex-grow: 1;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      justify-content: center;
+      padding: 24.5px 0 14.5px 0;
+      border-bottom: 2px solid rgba(0, 0, 0, 0);
+      cursor: pointer;
+      transition: all 0.5s linear;
+}
+.nav-tabs .menu-item h4 {
+      transition: all 0.5s linear;
+}
+.nav-tabs .menu-item div {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      padding: 5px 10px;
+      background-color: #3b3b3b;
+      width: fit-content;
+      transition: all 0.5s linear;
+}
+.nav-tabs .active {
+      border-bottom-color: #858584;
+}
+.nav-tabs .active h4 {
+      color: white;
+}
+.nav-tabs .active div {
+      background-color: #858584;
+}
+/* ============================================================ Artist Page - Nav-tabs: End ============================================================ */
+
+/* ============================================================ NFT Page - Cover: Start ============================================================ */
+.nft-page-cover {
+      width: 100%;
+      height: 560px;
+
+      background-image: url(../assets/images/nft-cover.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+}
+/* ============================================================ NFT Page - Cover: End ============================================================ */
+
+/* ============================================================ Orbitans: Start ============================================================ */
+.orbitans .orbitans-start {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+}
+.counter button {
+      width: 100%;
+      padding: 19px 0;
+}
+.icon-label {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      justify-content: flex-start;
+}
+.artist .user img {
+      height: 24px;
+      width: 24px;
+      object-fit: cover;
+}
+.artist .user {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+}
+.description {
+      max-width: 70%;
+}
+.badges {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+}
+.badge {
+      padding: 12px 30px;
+      text-transform: uppercase;
+}
+/* ============================================================ Orbitans: Start ============================================================ */
+
+/* ============================================================ Search: Start ============================================================ */
+.search-box {
+      padding: 19px 20px;
+      justify-content: flex-start;
+      border: 2px solid #3b3b3b;
+}
+.search-box input {
+      width: 100%;
+      outline: none;
+      font-weight: 400;
+}
+/* ============================================================ Search: End ============================================================ */
+
+/* ============================================================ Rankings: Start ============================================================ */
+.content-label {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      padding: 12px 30px;
+      border: 2px solid #3b3b3b;
+}
+.no,
+.artist-name,
+.change,
+.sold,
+.volume {
+      flex-basis: 0;
+}
+.no {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 0.3;
+      padding: 2px 4px;
+      margin-right: 30px;
+}
+.artist-name {
+      flex-grow: 8;
+}
+.person {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+}
+.person img {
+      height: 60px;
+      width: 60px;
+      border-radius: 100%;
+      object-fit: cover;
+}
+.change,
+.sold,
+.volume {
+      flex-grow: 3;
+}
+/* ============================================================ Rankings: End ============================================================ */

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Rankings</title>
+
+            <!-- Custom Styles -->
+            <link rel="stylesheet" href="css/style.css" />
+            <link rel="stylesheet" href="css/xxl.css" />
+            <link rel="stylesheet" href="css/xl.css" />
+            <link rel="stylesheet" href="css/lg.css" />
+            <link rel="stylesheet" href="css/md.css" />
+            <link rel="stylesheet" href="css/sm.css" />
+            <link rel="stylesheet" href="css/xs.css" />
+      </head>
+      <body>
+            <!-- ************************************************** Navbar: Start ************************************************** -->
+            <div class="navbar" id="nav">
+                  <div class="nav-logo">
+                        <div class="logo">
+                              <img src="assets/icons/Storefront.png" alt="icon" />&nbsp;&nbsp;<img
+                                    src="assets/icons/NFT Marketplace.png"
+                                    alt=""
+                              />
+                        </div>
+                        <a class="hamburger" onclick="expand()">
+                              <img src="assets/icons/Burger Menu.png" alt="menu" />
+                        </a>
+                  </div>
+                  <a href="marketplace.htm">Marketplace</a>
+                  <a href="rankings.htm">Rankings</a>
+                  <a href="connect-wallet.htm">Connect a wallet</a>
+                  <a href="create-account.htm" class="nav-button">
+                        <button class="btn bg-primary rounded">
+                              <img src="assets/icons/User.png" alt="" />Sign Up
+                        </button>
+                  </a>
+            </div>
+            <!-- ************************************************** Navbar: End ************************************************** -->
+
+            <div class="container">
+                  <!-- ************************************************** Title: Start ************************************************** -->
+                  <div class="py-2">
+                        <div class="mb-30">
+                              <div class="form-sec">
+                                    <form action="#">
+                                          <h1 class="mb-20">Top Creators</h1>
+                                          <p class="text-content mb-40">
+                                                Check out top ranking NFT artists on the NFT
+                                                Marketplace.
+                                          </p>
+                                    </form>
+                              </div>
+                        </div>
+                  </div>
+                  <!-- ************************************************** Title: End ************************************************** -->
+
+                  <!-- ************************************************** Tabs: Start ************************************************** -->
+                  <div class="nav-tabs mb-40">
+                        <div class="menu-item created active" onclick="switchTab(this);">
+                              <h4 class="fs-1 fs-2 text-muted">Today</h4>
+                        </div>
+                        <div class="menu-item owned" onclick="switchTab(this);">
+                              <h4 class="fs-1 fs-2 text-muted">This Week</h4>
+                        </div>
+                        <div class="menu-item owned" onclick="switchTab(this);">
+                              <h4 class="fs-1 fs-2 text-muted">This Month</h4>
+                        </div>
+                        <div class="menu-item owned" onclick="switchTab(this);">
+                              <h4 class="fs-1 fs-2 text-muted">All Time</h4>
+                        </div>
+                  </div>
+                  <!-- ************************************************** Tabs: End ************************************************** -->
+
+                  <!-- ************************************************** Ranks: Start ************************************************** -->
+                  <div class="mb-40">
+                        <div class="content-label mb-20 bg-secondary rounded">
+                              <div class="no text-muted space-mono rounded">#</div>
+                              <div class="artist-name text-muted space-mono">Artist</div>
+                              <div class="change text-muted space-mono">Change</div>
+                              <div class="sold text-muted space-mono">NFTs Sold</div>
+                              <div class="volume text-muted space-mono">Volume</div>
+                        </div>
+                        <div class="content-label mb-20 bg-grey rounded">
+                              <div class="no text-muted space-mono bg-secondary rounded">1</div>
+                              <div class="artist-name text-muted space-mono">
+                                    <div class="person">
+                                          <img
+                                                src="assets/images/jaydon.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                          <h2 class="fs-1 fs-2 fs-3">Jaydon Ekstrom Bothman</h2>
+                                    </div>
+                              </div>
+                              <div class="change text-success space-mono">+1.41%</div>
+                              <div class="sold space-mono">602</div>
+                              <div class="volume space-mono">12.4 ETH</div>
+                        </div>
+                        <div class="content-label mb-20 bg-grey rounded">
+                              <div class="no text-muted space-mono bg-secondary rounded">2</div>
+                              <div class="artist-name text-muted space-mono">
+                                    <div class="person">
+                                          <img
+                                                src="assets/images/ruben.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                          <h2 class="fs-1 fs-2 fs-3">Ruben Carder</h2>
+                                    </div>
+                              </div>
+                              <div class="change text-success space-mono">+1.41%</div>
+                              <div class="sold space-mono">602</div>
+                              <div class="volume space-mono">12.4 ETH</div>
+                        </div>
+                        <div class="content-label mb-20 bg-grey rounded">
+                              <div class="no text-muted space-mono bg-secondary rounded">3</div>
+                              <div class="artist-name text-muted space-mono">
+                                    <div class="person">
+                                          <img
+                                                src="assets/images/alfredo.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                          <h2 class="fs-1 fs-2 fs-3">Alfredo Septimus</h2>
+                                    </div>
+                              </div>
+                              <div class="change text-success space-mono">+1.41%</div>
+                              <div class="sold space-mono">602</div>
+                              <div class="volume space-mono">12.4 ETH</div>
+                        </div>
+                        <div class="content-label mb-20 bg-grey rounded">
+                              <div class="no text-muted space-mono bg-secondary rounded">4</div>
+                              <div class="artist-name text-muted space-mono">
+                                    <div class="person">
+                                          <img
+                                                src="assets/images/Davis Franci.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                          <h2 class="fs-1 fs-2 fs-3">Davis Franci</h2>
+                                    </div>
+                              </div>
+                              <div class="change text-success space-mono">+1.41%</div>
+                              <div class="sold space-mono">602</div>
+                              <div class="volume space-mono">12.4 ETH</div>
+                        </div>
+                        <div class="content-label mb-20 bg-grey rounded">
+                              <div class="no text-muted space-mono bg-secondary rounded">5</div>
+                              <div class="artist-name text-muted space-mono">
+                                    <div class="person">
+                                          <img
+                                                src="assets/images/Livia Rosser.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                          <h2 class="fs-1 fs-2 fs-3">Livia Rosser</h2>
+                                    </div>
+                              </div>
+                              <div class="change text-success space-mono">+1.41%</div>
+                              <div class="sold space-mono">602</div>
+                              <div class="volume space-mono">12.4 ETH</div>
+                        </div>
+                        <div class="content-label mb-20 bg-grey rounded">
+                              <div class="no text-muted space-mono bg-secondary rounded">6</div>
+                              <div class="artist-name text-muted space-mono">
+                                    <div class="person">
+                                          <img
+                                                src="assets/images/foxy-life.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                          <h2 class="fs-1 fs-2 fs-3">Kianna Donin</h2>
+                                    </div>
+                              </div>
+                              <div class="change text-success space-mono">+1.41%</div>
+                              <div class="sold space-mono">602</div>
+                              <div class="volume space-mono">12.4 ETH</div>
+                        </div>
+                        <div class="content-label mb-20 bg-grey rounded">
+                              <div class="no text-muted space-mono bg-secondary rounded">7</div>
+                              <div class="artist-name text-muted space-mono">
+                                    <div class="person">
+                                          <img
+                                                src="assets/images/shroomie.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                          <h2 class="fs-1 fs-2 fs-3">Phillip Lipshutz</h2>
+                                    </div>
+                              </div>
+                              <div class="change text-success space-mono">+1.41%</div>
+                              <div class="sold space-mono">602</div>
+                              <div class="volume space-mono">12.4 ETH</div>
+                        </div>
+                        <div class="content-label mb-20 bg-grey rounded">
+                              <div class="no text-muted space-mono bg-secondary rounded">8</div>
+                              <div class="artist-name text-muted space-mono">
+                                    <div class="person">
+                                          <img
+                                                src="assets/images/robotica.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                          <h2 class="fs-1 fs-2 fs-3">Maria Rosser</h2>
+                                    </div>
+                              </div>
+                              <div class="change text-success space-mono">+1.41%</div>
+                              <div class="sold space-mono">602</div>
+                              <div class="volume space-mono">12.4 ETH</div>
+                        </div>
+                        <div class="content-label mb-20 bg-grey rounded">
+                              <div class="no text-muted space-mono bg-secondary rounded">9</div>
+                              <div class="artist-name text-muted space-mono">
+                                    <div class="person">
+                                          <img
+                                                src="assets/images/robot-profile.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                          <h2 class="fs-1 fs-2 fs-3">Kianna Stanton</h2>
+                                    </div>
+                              </div>
+                              <div class="change text-success space-mono">+1.41%</div>
+                              <div class="sold space-mono">602</div>
+                              <div class="volume space-mono">12.4 ETH</div>
+                        </div>
+                        <div class="content-label mb-20 bg-grey rounded">
+                              <div class="no text-muted space-mono bg-secondary rounded">10</div>
+                              <div class="artist-name text-muted space-mono">
+                                    <div class="person">
+                                          <img
+                                                src="assets/images/nebulakid.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                          <h2 class="fs-1 fs-2 fs-3">Angel Lubin</h2>
+                                    </div>
+                              </div>
+                              <div class="change text-success space-mono">+1.41%</div>
+                              <div class="sold space-mono">602</div>
+                              <div class="volume space-mono">12.4 ETH</div>
+                        </div>
+                        <div class="content-label mb-20 bg-grey rounded">
+                              <div class="no text-muted space-mono bg-secondary rounded">11</div>
+                              <div class="artist-name text-muted space-mono">
+                                    <div class="person">
+                                          <img
+                                                src="assets/images/Allison Torff.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                          <h2 class="fs-1 fs-2 fs-3">Allison Torff</h2>
+                                    </div>
+                              </div>
+                              <div class="change text-success space-mono">+1.41%</div>
+                              <div class="sold space-mono">602</div>
+                              <div class="volume space-mono">12.4 ETH</div>
+                        </div>
+                        <div class="content-label mb-20 bg-grey rounded">
+                              <div class="no text-muted space-mono bg-secondary rounded">12</div>
+                              <div class="artist-name text-muted space-mono">
+                                    <div class="person">
+                                          <img
+                                                src="assets/images/bekindtorobots.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                          <h2 class="fs-1 fs-2 fs-3">Davis Workman</h2>
+                                    </div>
+                              </div>
+                              <div class="change text-success space-mono">+1.41%</div>
+                              <div class="sold space-mono">602</div>
+                              <div class="volume space-mono">12.4 ETH</div>
+                        </div>
+                        <div class="content-label mb-20 bg-grey rounded">
+                              <div class="no text-muted space-mono bg-secondary rounded">13</div>
+                              <div class="artist-name text-muted space-mono">
+                                    <div class="person">
+                                          <img
+                                                src="assets/images/colorful-dog-0356.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                          <h2 class="fs-1 fs-2 fs-3">Lindsey Lipshutz</h2>
+                                    </div>
+                              </div>
+                              <div class="change text-success space-mono">+1.41%</div>
+                              <div class="sold space-mono">602</div>
+                              <div class="volume space-mono">12.4 ETH</div>
+                        </div>
+                        <div class="content-label mb-20 bg-grey rounded">
+                              <div class="no text-muted space-mono bg-secondary rounded">14</div>
+                              <div class="artist-name text-muted space-mono">
+                                    <div class="person">
+                                          <img
+                                                src="assets/images/animakid.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                          <h2 class="fs-1 fs-2 fs-3">Randy Carder</h2>
+                                    </div>
+                              </div>
+                              <div class="change text-success space-mono">+1.41%</div>
+                              <div class="sold space-mono">602</div>
+                              <div class="volume space-mono">12.4 ETH</div>
+                        </div>
+                        <div class="content-label mb-20 bg-grey rounded">
+                              <div class="no text-muted space-mono bg-secondary rounded">15</div>
+                              <div class="artist-name text-muted space-mono">
+                                    <div class="person">
+                                          <img
+                                                src="assets/images/keepitreal.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                          <h2 class="fs-1 fs-2 fs-3">Lydia Culhane</h2>
+                                    </div>
+                              </div>
+                              <div class="change text-success space-mono">+1.41%</div>
+                              <div class="sold space-mono">602</div>
+                              <div class="volume space-mono">12.4 ETH</div>
+                        </div>
+                        <div class="content-label mb-20 bg-grey rounded">
+                              <div class="no text-muted space-mono bg-secondary rounded">16</div>
+                              <div class="artist-name text-muted space-mono">
+                                    <div class="person">
+                                          <img
+                                                src="assets/images/moondancer.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                          <h2 class="fs-1 fs-2 fs-3">Rayna Bator</h2>
+                                    </div>
+                              </div>
+                              <div class="change text-success space-mono">+1.41%</div>
+                              <div class="sold space-mono">602</div>
+                              <div class="volume space-mono">12.4 ETH</div>
+                        </div>
+                        <div class="content-label mb-20 bg-grey rounded">
+                              <div class="no text-muted space-mono bg-secondary rounded">17</div>
+                              <div class="artist-name text-muted space-mono">
+                                    <div class="person">
+                                          <img
+                                                src="assets/images/Jocelyn Westervelt.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                          <h2 class="fs-1 fs-2 fs-3">Jocelyn Westervelt</h2>
+                                    </div>
+                              </div>
+                              <div class="change text-success space-mono">+1.41%</div>
+                              <div class="sold space-mono">602</div>
+                              <div class="volume space-mono">12.4 ETH</div>
+                        </div>
+                        <div class="content-label mb-20 bg-grey rounded">
+                              <div class="no text-muted space-mono bg-secondary rounded">18</div>
+                              <div class="artist-name text-muted space-mono">
+                                    <div class="person">
+                                          <img
+                                                src="assets/images/jaydon.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                          <h2 class="fs-1 fs-2 fs-3">Marilyn Torff</h2>
+                                    </div>
+                              </div>
+                              <div class="change text-success space-mono">+1.41%</div>
+                              <div class="sold space-mono">602</div>
+                              <div class="volume space-mono">12.4 ETH</div>
+                        </div>
+                        <div class="content-label mb-20 bg-grey rounded">
+                              <div class="no text-muted space-mono bg-secondary rounded">19</div>
+                              <div class="artist-name text-muted space-mono">
+                                    <div class="person">
+                                          <img
+                                                src="assets/images/nebulakid.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                          <h2 class="fs-1 fs-2 fs-3">Skylar Levin</h2>
+                                    </div>
+                              </div>
+                              <div class="change text-success space-mono">+1.41%</div>
+                              <div class="sold space-mono">602</div>
+                              <div class="volume space-mono">12.4 ETH</div>
+                        </div>
+                        <div class="content-label mb-20 bg-grey rounded">
+                              <div class="no text-muted space-mono bg-secondary rounded">20</div>
+                              <div class="artist-name text-muted space-mono">
+                                    <div class="person">
+                                          <img
+                                                src="assets/images/alfredo.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                          <h2 class="fs-1 fs-2 fs-3">Terry Dorwart</h2>
+                                    </div>
+                              </div>
+                              <div class="change text-success space-mono">+1.41%</div>
+                              <div class="sold space-mono">602</div>
+                              <div class="volume space-mono">12.4 ETH</div>
+                        </div>
+                  </div>
+                  <!-- ************************************************** Ranks: Start ************************************************** -->
+            </div>
+
+            <!-- ************************************************** Footer: Start ************************************************** -->
+            <div class="foot-container">
+                  <div class="foot-main">
+                        <div class="foot-sec-1">
+                              <a href="index.htm"
+                                    ><div class="logo">
+                                          <img
+                                                src="assets/icons/Storefront.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                          <img
+                                                src="assets/icons/NFT Marketplace.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          /></div
+                              ></a>
+                              <p class="descr">NFT marketplace UI created with Anima for Figma.</p>
+                              <div class="social">
+                                    <p>Join our community</p>
+                                    <div class="social-icons">
+                                          <span
+                                                ><img
+                                                      src="assets/icons/DiscordLogo.png"
+                                                      alt=""
+                                                      class="img-fluid"
+                                          /></span>
+                                          <span
+                                                ><img
+                                                      src="assets/icons/YoutubeLogo.png"
+                                                      alt=""
+                                                      class="img-fluid"
+                                          /></span>
+                                          <span
+                                                ><img
+                                                      src="assets/icons/TwitterLogo.png"
+                                                      alt=""
+                                                      class="img-fluid"
+                                          /></span>
+                                          <span
+                                                ><img
+                                                      src="assets/icons/InstagramLogo.png"
+                                                      alt=""
+                                                      class="img-fluid"
+                                          /></span>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="foot-sec-2">
+                              <div class="logo">
+                                    <a href="NFT-page.htm"
+                                          ><img
+                                                src="assets/icons/Explore.png"
+                                                alt=""
+                                                class="img-fluid"
+                                    /></a>
+                              </div>
+                              <ul class="links">
+                                    <a href="marketplace.htm"><li class="mb-20">Marketplace</li></a>
+                                    <a href="rankings.htm"><li class="mb-20">Rankings</li></a>
+                                    <a href="connect-wallet.htm"
+                                          ><li class="mb-20">Connect a wallet</li></a
+                                    >
+                              </ul>
+                        </div>
+                        <div class="foot-sec-3">
+                              <div class="logo">
+                                    <img
+                                          src="assets/icons/Join our weekly digest.png"
+                                          alt=""
+                                          class="img-fluid"
+                                    />
+                              </div>
+                              <p class="descr mb-20">
+                                    Get exclusive promotions & updates straight to your inbox.
+                              </p>
+                              <div class="btn-input">
+                                    <form action="#">
+                                          <input
+                                                class="rounded"
+                                                type="email"
+                                                name="email"
+                                                id="em"
+                                                placeholder="Enter your email here"
+                                                required
+                                          />
+                                          <button type="submit" class="btn bg-primary rounded">
+                                                Subscribe
+                                          </button>
+                                    </form>
+                              </div>
+                        </div>
+                  </div>
+                  <hr />
+                  <p class="copyright">Ⓒ NFT Market. Use this template freely.</p>
+            </div>
+            <!-- ************************************************** Footer: End ************************************************** -->
+      </body>
+      <script src="js/index.js"></script>
+      <script src="js/navTabs.js"></script>
+      <script src="js/handleTabLable.js"></script>
+</html>
