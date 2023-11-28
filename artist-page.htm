@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Artist Page</title>
+
+            <!-- Custom Styles -->
+            <link rel="stylesheet" href="css/style.css" />
+            <link rel="stylesheet" href="css/xxl.css" />
+            <link rel="stylesheet" href="css/xl.css" />
+            <link rel="stylesheet" href="css/lg.css" />
+            <link rel="stylesheet" href="css/md.css" />
+            <link rel="stylesheet" href="css/sm.css" />
+            <link rel="stylesheet" href="css/xs.css" />
+      </head>
+      <body>
+            <!-- ************************************************** Navbar: Start ************************************************** -->
+            <div class="navbar" id="nav">
+                  <div class="nav-logo">
+                        <div class="logo">
+                              <img src="assets/icons/Storefront.png" alt="icon" />&nbsp;&nbsp;<img
+                                    src="assets/icons/NFT Marketplace.png"
+                                    alt=""
+                              />
+                        </div>
+                        <a class="hamburger" onclick="expand()">
+                              <img src="assets/icons/Burger Menu.png" alt="menu" />
+                        </a>
+                  </div>
+                  <a href="marketplace.htm">Marketplace</a>
+                  <a href="rankings.htm">Rankings</a>
+                  <a href="connect-wallet.htm">Connect a wallet</a>
+                  <a href="create-account.htm" class="nav-button">
+                        <button class="btn bg-primary rounded">
+                              <img src="assets/icons/User.png" alt="" />Sign Up
+                        </button>
+                  </a>
+            </div>
+            <!-- ************************************************** Navbar: End ************************************************** -->
+
+            <!-- ************************************************** Profile Cover: Start ************************************************** -->
+            <div class="container-fluid">
+                  <div class="cover-picture">
+                        <div class="profile-picture rounded">
+                              <img src="assets/images/animakid.png" alt="" class="img-fluid" />
+                        </div>
+                  </div>
+            </div>
+            <!-- ************************************************** Profile Cover: End ************************************************** -->
+
+            <!-- ************************************************** Profile Info: Start ************************************************** -->
+            <div class="container">
+                  <div class="py-1">
+                        <div class="artist-detail">
+                              <div class="highlight mb-30">
+                                    <h1>Animakid</h1>
+                                    <div class="buttons">
+                                          <button class="btn bg-primary rounded">
+                                                <img
+                                                      src="assets/icons/Copy.svg"
+                                                      alt=""
+                                                      class="img-fluid"
+                                                />
+                                                <span>0xc0E3...B79C</span>
+                                          </button>
+                                          <button class="btn bg-secondary rounded">
+                                                <img
+                                                      src="assets/icons/Plus.svg"
+                                                      alt=""
+                                                      class="img-fluid"
+                                                />
+                                                <span>Follow</span>
+                                          </button>
+                                    </div>
+                              </div>
+                              <div class="stats mb-30">
+                                    <div class="stat">
+                                          <h1 class="space-mono">250k+</h1>
+                                          <p class="text-content">Volume</p>
+                                    </div>
+                                    <div class="stat">
+                                          <h1 class="space-mono">50+</h1>
+                                          <p class="text-content">NFTs Sold</p>
+                                    </div>
+                                    <div class="stat">
+                                          <h1 class="space-mono">3000+</h1>
+                                          <p class="text-content">Followers</p>
+                                    </div>
+                              </div>
+                              <div class="bio mb-30">
+                                    <h3 class="fs-1 text-muted space-mono">Bio</h3>
+                                    <p class="text-content">The internet's friendliest designer kid.</p>
+                              </div>
+                              <div class="links mb-30">
+                                    <h3 class="fs-1 text-muted space-mono">Links</h3>
+                                    <div class="icons">
+                                          <img
+                                                src="assets/icons/Globe.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                          <img
+                                                src="assets/icons/DiscordLogo.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                          <img
+                                                src="assets/icons/YoutubeLogo.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                          <img
+                                                src="assets/icons/TwitterLogo.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                          <img
+                                                src="assets/icons/InstagramLogo.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            <!-- ************************************************** Profile Info: End ************************************************** -->
+
+            <!-- ************************************************** Nav Tabs: Start ************************************************** -->
+            <hr class="nav-line" />
+            <div class="container">
+                  <div class="nav-tabs">
+                        <div class="menu-item created active" onclick="switchTab(this);">
+                              <h4 class="fs-1 fs-2 text-muted">Created</h4>
+                              <div class="badge rounded">302</div>
+                        </div>
+                        <div class="menu-item owned" onclick="switchTab(this);">
+                              <h4 class="fs-1 fs-2 text-muted">Owned</h4>
+                              <div class="badge rounded">67</div>
+                        </div>
+                        <div class="menu-item collection" onclick="switchTab(this);">
+                              <h4 class="fs-1 fs-2 text-muted">Collection</h4>
+                              <div class="badge rounded">4</div>
+                        </div>
+                  </div>
+            </div>
+            <!-- ************************************************** Nav Tabs: End ************************************************** -->
+
+            <!-- ************************************************** More NFTs: Start ************************************************** -->
+            <div class="container bg-grey mb">
+                  <div class="py-1">
+                        <div class="NFTs mb-45">
+                              <div id="" class="NFT bg-secondary rounded">
+                                    <img
+                                          src="assets/images/distant-galaxy.png"
+                                          alt="nft-1"
+                                          class="img-fluid"
+                                    />
+                                    <div class="details">
+                                          <h2 class="name fs-1">Distant Galaxy</h2>
+                                          <h5 class="user btn">
+                                                <div class="profile rounded">
+                                                      <img
+                                                            src="assets/images/animakid.png"
+                                                            alt=""
+                                                            class="img-fluid"
+                                                      />
+                                                </div>
+                                                <span class="space-mono">Animakid</span>
+                                          </h5>
+                                          <div class="labels">
+                                                <span class="space-mono text-muted">Price</span>
+                                                <span class="space-mono text-muted">Highest Bid</span>
+                                          </div>
+                                          <div class="worth">
+                                                <span class="space-mono">1.63 ETH</span>
+                                                <span class="space-mono">0.33 wETH</span>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div id="" class="NFT bg-secondary rounded">
+                                    <img
+                                          src="assets/images/life-on-edena.png"
+                                          alt="nft-2"
+                                          class="img-fluid"
+                                    />
+                                    <div class="details">
+                                          <h2 class="name fs-1">Life on Edena</h2>
+                                          <h5 class="user btn">
+                                                <div class="profile rounded">
+                                                      <img
+                                                            src="assets/images/animakid.png"
+                                                            alt=""
+                                                            class="img-fluid"
+                                                      />
+                                                </div>
+                                                <span class="space-mono">Animakid</span>
+                                          </h5>
+                                          <div class="labels">
+                                                <span class="space-mono text-muted">Price</span>
+                                                <span class="space-mono text-muted">Highest Bid</span>
+                                          </div>
+                                          <div class="worth">
+                                                <span class="space-mono">1.63 ETH</span>
+                                                <span class="space-mono">0.33 wETH</span>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div id="" class="NFT bg-secondary rounded">
+                                    <img
+                                          src="assets/images/astrofiction.png"
+                                          alt="nft-3"
+                                          class="img-fluid"
+                                    />
+                                    <div class="details">
+                                          <h2 class="name fs-1">AstroFiction</h2>
+                                          <h5 class="user btn">
+                                                <div class="profile rounded">
+                                                      <img
+                                                            src="assets/images/animakid.png"
+                                                            alt=""
+                                                            class="img-fluid"
+                                                      />
+                                                </div>
+                                                <span class="space-mono">Animakid</span>
+                                          </h5>
+                                          <div class="labels">
+                                                <span class="space-mono text-muted">Price</span>
+                                                <span class="space-mono text-muted">Highest Bid</span>
+                                          </div>
+                                          <div class="worth">
+                                                <span class="space-mono">1.63 ETH</span>
+                                                <span class="space-mono">0.33 wETH</span>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div id="" class="NFT bg-secondary rounded">
+                                    <img
+                                          src="assets/images/crypto-city.png"
+                                          alt="nft-3"
+                                          class="img-fluid"
+                                    />
+                                    <div class="details">
+                                          <h2 class="name fs-1">CryptoCity</h2>
+                                          <h5 class="user btn">
+                                                <div class="profile rounded">
+                                                      <img
+                                                            src="assets/images/animakid.png"
+                                                            alt=""
+                                                            class="img-fluid"
+                                                      />
+                                                </div>
+                                                <span class="space-mono">Animakid</span>
+                                          </h5>
+                                          <div class="labels">
+                                                <span class="space-mono text-muted">Price</span>
+                                                <span class="space-mono text-muted">Highest Bid</span>
+                                          </div>
+                                          <div class="worth">
+                                                <span class="space-mono">1.63 ETH</span>
+                                                <span class="space-mono">0.33 wETH</span>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div id="" class="NFT bg-secondary rounded">
+                                    <img
+                                          src="assets/images/colorful-dog.png"
+                                          alt="nft-3"
+                                          class="img-fluid"
+                                    />
+                                    <div class="details">
+                                          <h2 class="name fs-1">ColorfulDog 0524</h2>
+                                          <h5 class="user btn">
+                                                <div class="profile rounded">
+                                                      <img
+                                                            src="assets/images/animakid.png"
+                                                            alt=""
+                                                            class="img-fluid"
+                                                      />
+                                                </div>
+                                                <span class="space-mono">Animakid</span>
+                                          </h5>
+                                          <div class="labels">
+                                                <span class="space-mono text-muted">Price</span>
+                                                <span class="space-mono text-muted">Highest Bid</span>
+                                          </div>
+                                          <div class="worth">
+                                                <span class="space-mono">1.63 ETH</span>
+                                                <span class="space-mono">0.33 wETH</span>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div id="" class="NFT bg-secondary rounded">
+                                    <img
+                                          src="assets/images/space-tales.png"
+                                          alt="nft-3"
+                                          class="img-fluid"
+                                    />
+                                    <div class="details">
+                                          <h2 class="name fs-1">Space Tales</h2>
+                                          <h5 class="user btn">
+                                                <div class="profile rounded">
+                                                      <img
+                                                            src="assets/images/animakid.png"
+                                                            alt=""
+                                                            class="img-fluid"
+                                                      />
+                                                </div>
+                                                <span class="space-mono">Animakid</span>
+                                          </h5>
+                                          <div class="labels">
+                                                <span class="space-mono text-muted">Price</span>
+                                                <span class="space-mono text-muted">Highest Bid</span>
+                                          </div>
+                                          <div class="worth">
+                                                <span class="space-mono">1.63 ETH</span>
+                                                <span class="space-mono">0.33 wETH</span>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div id="cherry-blossom-girl" class="NFT bg-secondary rounded">
+                                    <img
+                                          src="assets/images/cherry-blossom-girl.png"
+                                          alt="nft-3"
+                                          class="img-fluid"
+                                    />
+                                    <div class="details">
+                                          <h2 class="name fs-1">Cherry Blossom Girl 037</h2>
+                                          <h5 class="user btn">
+                                                <div class="profile rounded">
+                                                      <img
+                                                            src="assets/images/animakid.png"
+                                                            alt=""
+                                                            class="img-fluid"
+                                                      />
+                                                </div>
+                                                <span class="space-mono">Animakid</span>
+                                          </h5>
+                                          <div class="labels">
+                                                <span class="space-mono text-muted">Price</span>
+                                                <span class="space-mono text-muted">Highest Bid</span>
+                                          </div>
+                                          <div class="worth">
+                                                <span class="space-mono">1.63 ETH</span>
+                                                <span class="space-mono">0.33 wETH</span>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div id="dancing-robots" class="NFT bg-secondary rounded">
+                                    <img
+                                          src="assets/images/dancing-robots.png"
+                                          alt="nft-3"
+                                          class="img-fluid"
+                                    />
+                                    <div class="details">
+                                          <h2 class="name fs-1">Dancing Robots 0987</h2>
+                                          <h5 class="user btn">
+                                                <div class="profile rounded">
+                                                      <img
+                                                            src="assets/images/animakid.png"
+                                                            alt=""
+                                                            class="img-fluid"
+                                                      />
+                                                </div>
+                                                <span class="space-mono">Animakid</span>
+                                          </h5>
+                                          <div class="labels">
+                                                <span class="space-mono text-muted">Price</span>
+                                                <span class="space-mono text-muted">Highest Bid</span>
+                                          </div>
+                                          <div class="worth">
+                                                <span class="space-mono">1.63 ETH</span>
+                                                <span class="space-mono">0.33 wETH</span>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div id="icecream-ape" class="NFT bg-secondary rounded">
+                                    <img
+                                          src="assets/images/icecream-ape.png"
+                                          alt="nft-3"
+                                          class="img-fluid"
+                                    />
+                                    <div class="details">
+                                          <h2 class="name fs-1">IceCream Ape</h2>
+                                          <h5 class="user btn">
+                                                <div class="profile rounded">
+                                                      <img
+                                                            src="assets/images/animakid.png"
+                                                            alt=""
+                                                            class="img-fluid"
+                                                      />
+                                                </div>
+                                                <span class="space-mono">Animakid</span>
+                                          </h5>
+                                          <div class="labels">
+                                                <span class="space-mono text-muted">Price</span>
+                                                <span class="space-mono text-muted">Highest Bid</span>
+                                          </div>
+                                          <div class="worth">
+                                                <span class="space-mono">1.63 ETH</span>
+                                                <span class="space-mono">0.33 wETH</span>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            <!-- ************************************************** More NFTs: End ************************************************** -->
+
+            <!-- ************************************************** Footer: Start ************************************************** -->
+            <div class="foot-container">
+                  <div class="foot-main">
+                        <div class="foot-sec-1">
+                              <a href="index.htm"
+                                    ><div class="logo">
+                                          <img
+                                                src="assets/icons/Storefront.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                          <img
+                                                src="assets/icons/NFT Marketplace.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          /></div
+                              ></a>
+                              <p class="descr">NFT marketplace UI created with Anima for Figma.</p>
+                              <div class="social">
+                                    <p>Join our community</p>
+                                    <div class="social-icons">
+                                          <span
+                                                ><img
+                                                      src="assets/icons/DiscordLogo.png"
+                                                      alt=""
+                                                      class="img-fluid"
+                                          /></span>
+                                          <span
+                                                ><img
+                                                      src="assets/icons/YoutubeLogo.png"
+                                                      alt=""
+                                                      class="img-fluid"
+                                          /></span>
+                                          <span
+                                                ><img
+                                                      src="assets/icons/TwitterLogo.png"
+                                                      alt=""
+                                                      class="img-fluid"
+                                          /></span>
+                                          <span
+                                                ><img
+                                                      src="assets/icons/InstagramLogo.png"
+                                                      alt=""
+                                                      class="img-fluid"
+                                          /></span>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="foot-sec-2">
+                              <div class="logo">
+                                    <a href="NFT-page.htm"
+                                          ><img
+                                                src="assets/icons/Explore.png"
+                                                alt=""
+                                                class="img-fluid"
+                                    /></a>
+                              </div>
+                              <ul class="links">
+                                    <a href="marketplace.htm"><li class="mb-20">Marketplace</li></a>
+                                    <a href="rankings.htm"><li class="mb-20">Rankings</li></a>
+                                    <a href="connect-wallet.htm"
+                                          ><li class="mb-20">Connect a wallet</li></a
+                                    >
+                              </ul>
+                        </div>
+                        <div class="foot-sec-3">
+                              <div class="logo">
+                                    <img
+                                          src="assets/icons/Join our weekly digest.png"
+                                          alt=""
+                                          class="img-fluid"
+                                    />
+                              </div>
+                              <p class="descr mb-20">
+                                    Get exclusive promotions & updates straight to your inbox.
+                              </p>
+                              <div class="btn-input">
+                                    <form action="#">
+                                          <input
+                                                class="rounded"
+                                                type="email"
+                                                name="email"
+                                                id="em"
+                                                placeholder="Enter your email here"
+                                                required
+                                          />
+                                          <button type="submit" class="btn bg-primary rounded">
+                                                Subscribe
+                                          </button>
+                                    </form>
+                              </div>
+                        </div>
+                  </div>
+                  <hr />
+                  <p class="copyright">Ⓒ NFT Market. Use this template freely.</p>
+            </div>
+            <!-- ************************************************** Footer: End ************************************************** -->
+            
+      </body>
+      <script src="js/index.js"></script>
+      <script src="js/navTabs.js"></script>
+</html>

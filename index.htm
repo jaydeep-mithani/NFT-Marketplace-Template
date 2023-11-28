@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>NFT Marketplace</title>
+
+            <!-- Custom Styles -->
+            <link rel="stylesheet" href="css/style.css" />
+            <link rel="stylesheet" href="css/xxl.css" />
+            <link rel="stylesheet" href="css/xl.css" />
+            <link rel="stylesheet" href="css/lg.css" />
+            <link rel="stylesheet" href="css/md.css" />
+            <link rel="stylesheet" href="css/sm.css" />
+            <link rel="stylesheet" href="css/xs.css" />
+      </head>
+
+      <body>
+            <!-- ************************************************** Navbar: Start ************************************************** -->
+            <div class="navbar" id="nav">
+                  <div class="nav-logo">
+                        <div class="logo">
+                              <img src="assets/icons/Storefront.png" alt="icon" />&nbsp;&nbsp;<img
+                                    src="assets/icons/NFT Marketplace.png"
+                                    alt=""
+                              />
+                        </div>
+                        <a class="hamburger" onclick="expand()">
+                              <img src="assets/icons/Burger Menu.png" alt="menu" />
+                        </a>
+                  </div>
+                  <a href="marketplace.htm">Marketplace</a>
+                  <a href="rankings.htm">Rankings</a>
+                  <a href="connect-wallet.htm">Connect a wallet</a>
+                  <a href="create-account.htm" class="nav-button">
+                        <button class="btn bg-primary rounded">
+                              <img src="assets/icons/User.png" alt="" />Sign Up
+                        </button>
+                  </a>
+            </div>
+            <!-- ************************************************** Navbar: End ************************************************** -->
+            <!-- MAIN CONTENT CONTAINER -->
+            <div class="container">
+                  <!-- ************************************************** Discover Digital Art: Start ************************************************** -->
+                  <div class="py-1 discover-digital">
+                        <div class="cont o-1">
+                              <h1 class="heading mb-20">Discover digital art & Collect NFTs</h1>
+                              <p class="text-content">
+                                    NFT marketplace UI created with Anima for Figma. Collect, buy
+                                    and sell art from more than 20k NFT artists.
+                              </p>
+                              <div class="stats-lg">
+                                    <button class="heading-button btn bg-primary rounded">
+                                          <img src="assets/icons/RocketLaunch.png" alt="" /><span
+                                                >Get Started</span
+                                          >
+                                    </button>
+                                    <div class="stats">
+                                          <div>
+                                                <h1 class="space-mono">240k+</h1>
+                                                <h2 class="text-content">Total Sale</h2>
+                                          </div>
+                                          <div>
+                                                <h1 class="space-mono">100k+</h1>
+                                                <h2 class="text-content">Auctions</h2>
+                                          </div>
+                                          <div>
+                                                <h1 class="space-mono">240k+</h1>
+                                                <h2 class="text-content">Artists</h2>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="space-walk o-2 bg-grey rounded">
+                              <img
+                                    src="assets/images/Image Placeholder.png"
+                                    alt="astronot"
+                                    class="img-fluid"
+                              />
+                              <div class="info">
+                                    <h1 class="fs-1 mb-10">Space Walking</h1>
+                                    <div>
+                                          <img
+                                                src="assets/icons/Avatar Placeholder (25).png"
+                                                alt="user0"
+                                                class="img-fluid"
+                                          />
+                                          <span>Animakid</span>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="stats-sm">
+                              <button class="heading-button btn bg-primary rounded">
+                                    <img
+                                          src="assets/icons/RocketLaunch.png"
+                                          alt=""
+                                    />&nbsp;&nbsp;<span>Get Started</span>
+                              </button>
+                              <div class="stats">
+                                    <div>
+                                          <h1 class="space-mono fs-4">240k+</h1>
+                                          <h2 class="fs-3">Total Sale</h2>
+                                    </div>
+                                    <div>
+                                          <h1 class="space-mono fs-4">100k+</h1>
+                                          <h2 class="fs-3">Auctions</h2>
+                                    </div>
+                                    <div>
+                                          <h1 class="space-mono fs-4">240k+</h1>
+                                          <h2 class="fs-3">Artists</h2>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                  <!-- ************************************************** Discover Digital Art: End ************************************************** -->
+
+                  <!-- ************************************************** Trending Collection: Start ************************************************** -->
+                  <div class="py-2 trending-collection">
+                        <div class="title">
+                              <h1 class="mb-10">Trending Collection</h1>
+                              <p class="text-content">
+                                    Checkout our weekly updated trending collection.
+                              </p>
+                        </div>
+                        <div class="collections">
+                              <div class="preview">
+                                    <div class="image main rounded">
+                                          <img
+                                                src="assets/images/Primary Photo Placeholder.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                    </div>
+                                    <div class="other">
+                                          <div class="image more rounded">
+                                                <img
+                                                      src="assets/images/Secondary Photo Placeholder.png"
+                                                      alt=""
+                                                      class="img-fluid"
+                                                />
+                                          </div>
+                                          <div class="image more rounded">
+                                                <img
+                                                      src="assets/images/Secondary Photo Placeholder (1).png"
+                                                      alt=""
+                                                      class="img-fluid"
+                                                />
+                                          </div>
+                                          <div
+                                                class="image rest bg-primary rounded fs-1 space-mono"
+                                          >
+                                                1025+
+                                          </div>
+                                    </div>
+                                    <div class="collector">
+                                          <h1 class="fs-1 mb-10">DSGN Animals</h1>
+                                          <span class="user">
+                                                <img
+                                                      src="assets/icons/Avatar Placeholder.png"
+                                                      alt=""
+                                                      class="img-fluid"
+                                                />
+                                                <span>MrFox</span>
+                                          </span>
+                                    </div>
+                              </div>
+                              <div class="preview dn-sm">
+                                    <div class="image main rounded">
+                                          <img
+                                                src="assets/images/Primary Photo Placeholder (1).png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                    </div>
+                                    <div class="other">
+                                          <div class="image more rounded">
+                                                <img
+                                                      src="assets/images/Secondary Photo Placeholder (2).png"
+                                                      alt=""
+                                                      class="img-fluid"
+                                                />
+                                          </div>
+                                          <div class="image more rounded">
+                                                <img
+                                                      src="assets/images/Secondary Photo Placeholder (3).png"
+                                                      alt=""
+                                                      class="img-fluid"
+                                                />
+                                          </div>
+                                          <div
+                                                class="image rest bg-primary rounded fs-1 space-mono"
+                                          >
+                                                1025+
+                                          </div>
+                                    </div>
+                                    <div class="collector">
+                                          <h1 class="fs-1 mb-10">Magic Mushrooms</h1>
+                                          <span class="user">
+                                                <img
+                                                      src="assets/icons/Avatar Placeholder-1.png"
+                                                      alt=""
+                                                      class="img-fluid"
+                                                />
+                                                <span>Shroomie</span>
+                                          </span>
+                                    </div>
+                              </div>
+                              <div class="preview dn-lg">
+                                    <div class="image main rounded">
+                                          <img
+                                                src="assets/images/Primary Photo Placeholder (2).png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                    </div>
+                                    <div class="other">
+                                          <div class="image more rounded">
+                                                <img
+                                                      src="assets/images/Secondary Photo Placeholder (5).png"
+                                                      alt=""
+                                                      class="img-fluid"
+                                                />
+                                          </div>
+                                          <div class="image more rounded">
+                                                <img
+                                                      src="assets/images/Secondary Photo Placeholder (4).png"
+                                                      alt=""
+                                                      class="img-fluid"
+                                                />
+                                          </div>
+                                          <div
+                                                class="image rest bg-primary rounded fs-1 space-mono"
+                                          >
+                                                1025+
+                                          </div>
+                                    </div>
+                                    <div class="collector">
+                                          <h1 class="fs-1 mb-10">Disco Machines</h1>
+                                          <span class="user">
+                                                <img
+                                                      src="assets/icons/Avatar Placeholder-2.png"
+                                                      alt=""
+                                                      class="img-fluid"
+                                                />
+                                                <span>BeKind2Robots</span>
+                                          </span>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                  <!-- ************************************************** Trending Collection: End ************************************************** -->
+
+                  <!-- ************************************************** Top Creators: Start ************************************************** -->
+                  <div class="py-2 top-creators">
+                        <div class="btn-title">
+                              <div class="title">
+                                    <h1 class="mb-10">Top creators</h1>
+                                    <p class="text-content">
+                                          Checkout Top Rated Creators on the NFT Marketplace
+                                    </p>
+                              </div>
+                              <button class="btn bg-secondary rounded">
+                                    <img src="assets/icons/RocketLaunch (1).png" alt="" />
+                                    <span>View Rankings</span>
+                              </button>
+                        </div>
+                        <div class="creators mb-45">
+                              <div id="one" class="creator bg-grey rounded">
+                                    <span class="text-center count bg-secondary text-muted rounded"
+                                          >1</span
+                                    >
+                                    <div class="profile mb-20">
+                                          <img
+                                                src="assets/images/Avatar Placeholder-3.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                    </div>
+                                    <div class="info text-center">
+                                          <p class="fs-1">Keepitreal</p>
+                                          <div>
+                                                <span class="text-muted">Total Sales:</span>
+                                                <span class="ETH space-mono">34.53 ETH</span>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div id="two" class="creator bg-grey rounded">
+                                    <span class="text-center count bg-secondary text-muted rounded"
+                                          >2</span
+                                    >
+                                    <div class="profile mb-20">
+                                          <img
+                                                src="assets/images/Avatar Placeholder-4.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                    </div>
+                                    <div class="info text-center">
+                                          <p class="fs-1">DigiLab</p>
+                                          <div>
+                                                <span class="text-muted">Total Sales:</span>
+                                                <span class="ETH space-mono">34.53 ETH</span>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div id="three" class="creator bg-grey rounded">
+                                    <span class="text-center count bg-secondary text-muted rounded"
+                                          >3</span
+                                    >
+                                    <div class="profile mb-20">
+                                          <img
+                                                src="assets/images/Avatar Placeholder-5.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                    </div>
+                                    <div class="info text-center">
+                                          <p class="fs-1">GravityOne</p>
+                                          <div>
+                                                <span class="text-muted">Total Sales:</span>
+                                                <span class="ETH space-mono">34.53 ETH</span>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div id="four" class="creator bg-grey rounded">
+                                    <span class="text-center count bg-secondary text-muted rounded"
+                                          >4</span
+                                    >
+                                    <div class="profile mb-20">
+                                          <img
+                                                src="assets/images/Avatar Placeholder-6.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                    </div>
+                                    <div class="info text-center">
+                                          <p class="fs-1">Juanie</p>
+                                          <div>
+                                                <span class="text-muted">Total Sales:</span>
+                                                <span class="ETH space-mono">34.53 ETH</span>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div id="five" class="creator bg-grey rounded">
+                                    <span class="text-center count bg-secondary text-muted rounded"
+                                          >5</span
+                                    >
+                                    <div class="profile mb-20">
+                                          <img
+                                                src="assets/images/Avatar Placeholder-7.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                    </div>
+                                    <div class="info text-center">
+                                          <p class="fs-1">BlueWhale</p>
+                                          <div>
+                                                <span class="text-muted">Total Sales:</span>
+                                                <span class="ETH space-mono">34.53 ETH</span>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div id="six" class="creator bg-grey rounded">
+                                    <span class="text-center count bg-secondary text-muted rounded"
+                                          >6</span
+                                    >
+                                    <div class="profile mb-20">
+                                          <img
+                                                src="assets/images/Avatar Placeholder-8.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                    </div>
+                                    <div class="info text-center">
+                                          <p class="fs-1">mr fox</p>
+                                          <div>
+                                                <span class="text-muted">Total Sales:</span>
+                                                <span class="ETH space-mono">34.53 ETH</span>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div id="seven" class="creator bg-grey rounded">
+                                    <span class="text-center count bg-secondary text-muted rounded"
+                                          >7</span
+                                    >
+                                    <div class="profile mb-20">
+                                          <img
+                                                src="assets/images/Avatar Placeholder-9.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                    </div>
+                                    <div class="info text-center">
+                                          <p class="fs-1">Shroomie</p>
+                                          <div>
+                                                <span class="text-muted">Total Sales:</span>
+                                                <span class="ETH space-mono">34.53 ETH</span>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div id="eight" class="creator bg-grey rounded">
+                                    <span class="text-center count bg-secondary text-muted rounded"
+                                          >8</span
+                                    >
+                                    <div class="profile mb-20">
+                                          <img
+                                                src="assets/images/Avatar Placeholder-10.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                    </div>
+                                    <div class="info text-center">
+                                          <p class="fs-1">robotica</p>
+                                          <div>
+                                                <span class="text-muted">Total Sales:</span>
+                                                <span class="ETH space-mono">34.53 ETH</span>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div id="nine" class="creator bg-grey rounded">
+                                    <span class="text-center count bg-secondary text-muted rounded"
+                                          >9</span
+                                    >
+                                    <div class="profile mb-20">
+                                          <img
+                                                src="assets/images/Avatar Placeholder-11.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                    </div>
+                                    <div class="info text-center">
+                                          <p class="fs-1">RustyRobot</p>
+                                          <div>
+                                                <span class="text-muted">Total Sales:</span>
+                                                <span class="ETH space-mono">34.53 ETH</span>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div id="ten" class="creator bg-grey rounded">
+                                    <span class="text-center count bg-secondary text-muted rounded"
+                                          >10</span
+                                    >
+                                    <div class="profile mb-20">
+                                          <img
+                                                src="assets/images/Avatar Placeholder-12.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                    </div>
+                                    <div class="info text-center">
+                                          <p class="fs-1">animakid</p>
+                                          <div>
+                                                <span class="text-muted">Total Sales:</span>
+                                                <span class="ETH space-mono">34.53 ETH</span>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div id="eleven" class="creator bg-grey rounded">
+                                    <span class="text-center count bg-secondary text-muted rounded"
+                                          >11</span
+                                    >
+                                    <div class="profile mb-20">
+                                          <img
+                                                src="assets/images/Avatar Placeholder-13.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                    </div>
+                                    <div class="info text-center">
+                                          <p class="fs-1">Dotgu</p>
+                                          <div>
+                                                <span class="text-muted">Total Sales:</span>
+                                                <span class="ETH space-mono">34.53 ETH</span>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div id="twelve" class="creator bg-grey rounded">
+                                    <span class="text-center count bg-secondary text-muted rounded"
+                                          >12</span
+                                    >
+                                    <div class="profile mb-20">
+                                          <img
+                                                src="assets/images/Avatar Placeholder-14.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                    </div>
+                                    <div class="info text-center">
+                                          <p class="fs-1">Ghiblier</p>
+                                          <div>
+                                                <span class="text-muted">Total Sales:</span>
+                                                <span class="ETH space-mono">34.53 ETH</span>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="d-none creators-button">
+                              <button>
+                                    <img src="assets/icons/RocketLaunch (1).png" alt="" />
+                                    <span>View Rankings</span>
+                              </button>
+                        </div>
+                  </div>
+                  <!-- ************************************************** Top Creators: End ************************************************** -->
+
+                  <!-- ************************************************** Browse Categories: Start ************************************************** -->
+                  <div class="py-2 browse-cat">
+                        <div class="title">
+                              <h1 class="mb-10">Browse Categories</h1>
+                        </div>
+                        <div class="categories">
+                              <div class="category rounded">
+                                    <img
+                                          src="assets/images/Category Icon.png"
+                                          alt="cat-1"
+                                          class="img-fluid"
+                                    />
+                                    <div class="bg-grey"><span class="fs-1 fs-2">Art</span></div>
+                              </div>
+                              <div class="category rounded">
+                                    <img
+                                          src="assets/images/Category Icon-7.png"
+                                          alt="cat-1"
+                                          class="img-fluid"
+                                    />
+                                    <div class="bg-grey">
+                                          <span class="fs-1 fs-2">Collectibles</span>
+                                    </div>
+                              </div>
+                              <div class="category rounded">
+                                    <img
+                                          src="assets/images/Category Icon-1.png"
+                                          alt="cat-1"
+                                          class="img-fluid"
+                                    />
+                                    <div class="bg-grey"><span class="fs-1 fs-2">Music</span></div>
+                              </div>
+                              <div class="category rounded">
+                                    <img
+                                          src="assets/images/Category Icon-2.png"
+                                          alt="cat-1"
+                                          class="img-fluid"
+                                    />
+                                    <div class="bg-grey">
+                                          <span class="fs-1 fs-2">Photography</span>
+                                    </div>
+                              </div>
+                              <div class="category rounded">
+                                    <img
+                                          src="assets/images/Category Icon-3.png"
+                                          alt="cat-1"
+                                          class="img-fluid"
+                                    />
+                                    <div class="bg-grey"><span class="fs-1 fs-2">Video</span></div>
+                              </div>
+                              <div class="category rounded">
+                                    <img
+                                          src="assets/images/Category Icon-4.png"
+                                          alt="cat-1"
+                                          class="img-fluid"
+                                    />
+                                    <div class="bg-grey">
+                                          <span class="fs-1 fs-2">Utility</span>
+                                    </div>
+                              </div>
+                              <div class="category rounded">
+                                    <img
+                                          src="assets/images/Category Icon-5.png"
+                                          alt="cat-1"
+                                          class="img-fluid"
+                                    />
+                                    <div class="bg-grey"><span class="fs-1 fs-2">Sport</span></div>
+                              </div>
+                              <div class="category rounded">
+                                    <img
+                                          src="assets/images/Category Icon-6.png"
+                                          alt="cat-1"
+                                          class="img-fluid"
+                                    />
+                                    <div class="bg-grey">
+                                          <span class="fs-1 fs-2">Virtual Worlds</span>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                  <!-- ************************************************** Browse Categories: End ************************************************** -->
+
+                  <!-- ************************************************** More NFTs: Start ************************************************** -->
+                  <div class="py-2">
+                        <div class="btn-title">
+                              <div class="title">
+                                    <h1 class="mb-10">Discover More NFTs</h1>
+                                    <p class="text-content">Explore new trending NFTs</p>
+                              </div>
+                              <button class="btn bg-secondary rounded">
+                                    <img src="assets/icons/Eye.png" alt="" />
+                                    <span>See All</span>
+                              </button>
+                        </div>
+                        <div class="NFTs mb-45 rounded">
+                              <div id="nft1" class="NFT bg-grey rounded">
+                                    <img
+                                          src="assets/images/distant-galaxy.png"
+                                          alt="nft-1"
+                                          class="img-fluid"
+                                    />
+                                    <div class="details">
+                                          <h2 class="name fs-1">Distant Galaxy</h2>
+                                          <h5 class="user btn">
+                                                <div class="profile rounded">
+                                                      <img
+                                                            src="assets/icons/Avatar Placeholder-15.png"
+                                                            alt=""
+                                                            class="img-fluid"
+                                                      />
+                                                </div>
+                                                <span class="space-mono">Moon Dancer</span>
+                                          </h5>
+                                          <div class="labels">
+                                                <span class="space-mono text-muted">Price</span>
+                                                <span class="space-mono text-muted"
+                                                      >Highest Bid</span
+                                                >
+                                          </div>
+                                          <div class="worth">
+                                                <span class="space-mono">1.63 ETH</span>
+                                                <span class="space-mono">0.33 wETH</span>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div id="nft2" class="NFT bg-grey rounded">
+                                    <img
+                                          src="assets/images/life-on-edena.png"
+                                          alt="nft-2"
+                                          class="img-fluid"
+                                    />
+                                    <div class="details">
+                                          <h2 class="name fs-1">Life on Edena</h2>
+                                          <h5 class="user btn">
+                                                <div class="profile rounded">
+                                                      <img
+                                                            src="assets/icons/Avatar Placeholder-16.png"
+                                                            alt=""
+                                                            class="img-fluid"
+                                                      />
+                                                </div>
+                                                <span class="space-mono">NebulaKid</span>
+                                          </h5>
+                                          <div class="labels">
+                                                <span class="space-mono text-muted">Price</span>
+                                                <span class="space-mono text-muted"
+                                                      >Highest Bid</span
+                                                >
+                                          </div>
+                                          <div class="worth">
+                                                <span class="space-mono">1.63 ETH</span>
+                                                <span class="space-mono">0.33 wETH</span>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div id="nft3" class="NFT bg-grey rounded">
+                                    <img
+                                          src="assets/images/astrofiction.png"
+                                          alt="nft-3"
+                                          class="img-fluid"
+                                    />
+                                    <div class="details">
+                                          <h2 class="name fs-1">AstroFiction</h2>
+                                          <h5 class="user btn">
+                                                <div class="profile rounded">
+                                                      <img
+                                                            src="assets/icons/Avatar Placeholder-17.png"
+                                                            alt=""
+                                                            class="img-fluid"
+                                                      />
+                                                </div>
+                                                <span class="space-mono">Spaceone</span>
+                                          </h5>
+                                          <div class="labels">
+                                                <span class="space-mono text-muted">Price</span>
+                                                <span class="space-mono text-muted"
+                                                      >Highest Bid</span
+                                                >
+                                          </div>
+                                          <div class="worth">
+                                                <span class="space-mono">1.63 ETH</span>
+                                                <span class="space-mono">0.33 wETH</span>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="d-none creators-button">
+                              <button>
+                                    <img src="assets/icons/Eye.png" alt="" />
+                                    <span>See All</span>
+                              </button>
+                        </div>
+                  </div>
+                  <!-- ************************************************** More NFTs: End ************************************************** -->
+            </div>
+            <!-- ************************************************** Auction: Start ************************************************** -->
+            <div class="container-fluid auction">
+                  <div class="details">
+                        <div class="about">
+                              <button type="button" class="user btn bg-grey mb-30 rounded">
+                                    <img src="assets/icons/Avatar Placeholder-1.png" alt="" />
+                                    <span>Shroomie</span>
+                              </button>
+                              <h1 class="mb-30">Magic Mashrooms</h1>
+                              <button type="button" class="see-lg btn text-secondary rounded">
+                                    <img src="assets/icons/Eye.png" alt="" />
+                                    See NFT
+                              </button>
+                        </div>
+                        <div>
+                              <div class="countdown rounded">
+                                    <span class="label space-mono">Auction ends in:</span>
+                                    <div class="count">
+                                          <div class="units">
+                                                <h1 class="space-mono">59</h1>
+                                                <span class="space-mono">Hours</span>
+                                          </div>
+                                          <div class="units">
+                                                <h1 class="space-mono">:</h1>
+                                          </div>
+                                          <div class="units">
+                                                <h1 class="space-mono">59</h1>
+                                                <span class="space-mono">Minutes</span>
+                                          </div>
+                                          <div class="units">
+                                                <h1 class="space-mono">:</h1>
+                                          </div>
+                                          <div class="units">
+                                                <h1 class="space-mono">59</h1>
+                                                <span class="space-mono">Seconds</span>
+                                          </div>
+                                    </div>
+                              </div>
+                              <button type="button" class="see-sm btn text-secondary">
+                                    <img src="assets/icons/Eye.png" alt="" />
+                                    See NFT
+                              </button>
+                        </div>
+                  </div>
+            </div>
+            <!-- ************************************************** Auction: End ************************************************** -->
+            <div class="container">
+                  <!-- ************************************************** How It Works: Start ************************************************** -->
+                  <div class="py-2">
+                        <div class="title">
+                              <h1 class="mb-10">How it works</h1>
+                              <p class="text-content">Find out how to get started</p>
+                        </div>
+                        <div class="cards">
+                              <div class="card bg-grey rounded">
+                                    <img
+                                          src="assets/icons/Icon.png"
+                                          alt=""
+                                          class="img-fluid mb-20"
+                                    />
+                                    <div class="content">
+                                          <h4 class="fs-1 fs-2 mb-10">Setup Your wallet</h4>
+                                          <p>
+                                                Set up your wallet of choice. Connect it to the
+                                                Animarket by clicking the wallet icon in the top
+                                                right corner.
+                                          </p>
+                                    </div>
+                              </div>
+                              <div class="card bg-grey rounded">
+                                    <img
+                                          src="assets/icons/Icon (1).png"
+                                          alt=""
+                                          class="img-fluid mb-20"
+                                    />
+                                    <div class="content">
+                                          <h4 class="fs-1 fs-2">Create Collection</h4>
+                                          <p>
+                                                Upload your work and setup your collection. Add a
+                                                description, social links and floor price.
+                                          </p>
+                                    </div>
+                              </div>
+                              <div class="card bg-grey rounded">
+                                    <img
+                                          src="assets/icons/Icon (2).png"
+                                          alt=""
+                                          class="img-fluid mb-20"
+                                    />
+                                    <div class="content">
+                                          <h4 class="fs-1 fs-2">Start Earning</h4>
+                                          <p>
+                                                Choose between auctions and fixed-price listings.
+                                                Start earning by selling your NFTs or trading
+                                                others.
+                                          </p>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                  <!-- ************************************************** How It Works: End ************************************************** -->
+
+                  <!-- ************************************************** Weekly Digest: Start ************************************************** -->
+                  <div class="py-2 pt4">
+                        <div class="weekly-digest bg-grey rounded">
+                              <div class="photo rounded">
+                                    <img
+                                          src="assets/images/Photo.png"
+                                          alt="photo"
+                                          class="img-fluid"
+                                    />
+                              </div>
+                              <div class="content">
+                                    <h1 class="mb-10">Join our weekly digest</h1>
+                                    <p class="text-content mb-40">
+                                          Get exclusive promotions & updates straight to your inbox.
+                                    </p>
+                                    <div class="btn-input">
+                                          <form action="#">
+                                                <input
+                                                      class="rounded"
+                                                      type="email"
+                                                      name="email"
+                                                      id="em"
+                                                      placeholder="Enter your email here"
+                                                      required
+                                                />
+                                                <button
+                                                      type="submit"
+                                                      class="bg-primary btn rounded"
+                                                >
+                                                      <img
+                                                            src="assets/icons/EnvelopeSimple.png"
+                                                            alt=""
+                                                      />
+                                                      Subscribe
+                                                </button>
+                                          </form>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                  <!-- ************************************************** Weekly Digest: End ************************************************** -->
+            </div>
+            <!-- ************************************************** Footer: Start ************************************************** -->
+            <div class="foot-container">
+                  <div class="foot-main">
+                        <div class="foot-sec-1">
+                              <a href="index.htm"
+                                    ><div class="logo">
+                                          <img
+                                                src="assets/icons/Storefront.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          />
+                                          <img
+                                                src="assets/icons/NFT Marketplace.png"
+                                                alt=""
+                                                class="img-fluid"
+                                          /></div
+                              ></a>
+                              <p class="descr">NFT marketplace UI created with Anima for Figma.</p>
+                              <div class="social">
+                                    <p>Join our community</p>
+                                    <div class="social-icons">
+                                          <span
+                                                ><img
+                                                      src="assets/icons/DiscordLogo.png"
+                                                      alt=""
+                                                      class="img-fluid"
+                                          /></span>
+                                          <span
+                                                ><img
+                                                      src="assets/icons/YoutubeLogo.png"
+                                                      alt=""
+                                                      class="img-fluid"
+                                          /></span>
+                                          <span
+                                                ><img
+                                                      src="assets/icons/TwitterLogo.png"
+                                                      alt=""
+                                                      class="img-fluid"
+                                          /></span>
+                                          <span
+                                                ><img
+                                                      src="assets/icons/InstagramLogo.png"
+                                                      alt=""
+                                                      class="img-fluid"
+                                          /></span>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="foot-sec-2">
+                              <div class="logo">
+                                    <a href="NFT-page.htm"
+                                          ><img
+                                                src="assets/icons/Explore.png"
+                                                alt=""
+                                                class="img-fluid"
+                                    /></a>
+                              </div>
+                              <ul class="links">
+                                    <a href="marketplace.htm"><li class="mb-20">Marketplace</li></a>
+                                    <a href="rankings.htm"><li class="mb-20">Rankings</li></a>
+                                    <a href="connect-wallet.htm"
+                                          ><li class="mb-20">Connect a wallet</li></a
+                                    >
+                              </ul>
+                        </div>
+                        <div class="foot-sec-3">
+                              <div class="logo">
+                                    <img
+                                          src="assets/icons/Join our weekly digest.png"
+                                          alt=""
+                                          class="img-fluid"
+                                    />
+                              </div>
+                              <p class="descr mb-20">
+                                    Get exclusive promotions & updates straight to your inbox.
+                              </p>
+                              <div class="btn-input">
+                                    <form action="#">
+                                          <input
+                                                class="rounded"
+                                                type="email"
+                                                name="email"
+                                                id="em"
+                                                placeholder="Enter your email here"
+                                                required
+                                          />
+                                          <button type="submit" class="btn bg-primary rounded">
+                                                Subscribe
+                                          </button>
+                                    </form>
+                              </div>
+                        </div>
+                  </div>
+                  <hr />
+                  <p class="copyright">Ⓒ NFT Market. Use this template freely.</p>
+            </div>
+            <!-- ************************************************** Footer: End ************************************************** -->
+      </body>
+      <script src="js/index.js"></script>
+</html>
